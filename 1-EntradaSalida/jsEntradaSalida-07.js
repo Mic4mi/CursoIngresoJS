@@ -10,24 +10,28 @@ ej.: "la Resta es 750"*/
 function sumar() {
 	num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
 	num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
-	alert(num1 + num2);
+	resultado = num1 + num2;
+	alert("La suma es " + resultado);
 }
 
 function restar() {
 	num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
 	num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
-	alert(num1 - num2);
+	resultado = num1 - num2;
+	alert("La resta es " + resultado);
 }
 
 function multiplicar() {
 	num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
 	num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
-	alert(num1 * num2);
+	resultado = num1 * num2;
+	alert("La multiplicación es " + resultado);
 }
 
 function dividir() {
 	num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
 	num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
-	alert(num1 / num2);
+	resultado = num1 / num2;
+	alert("La división es " + resultado);
 }
 
