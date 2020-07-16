@@ -24,7 +24,6 @@ function PrecioFinal() {
     let numDos = parseFloat(document.getElementById("txtIdPrecioDos").value);
     let numTres = parseFloat(document.getElementById("txtIdPrecioTres").value);
     let result = numUno + numDos + numTres;
-    let iva = (result * 21) / 100;
-    result = result + iva;
+    result += (result * 0.21);
     alert("Los productos más IVA suman un total de $" + result.toFixed(2));
 }
