@@ -7,5 +7,6 @@ function mostrarAumento() {
 	var resultInput = document.getElementById("txtIdResultado");
 	var importe = parseFloat(document.getElementById("txtIdImporte").value);
 	var descuento = (importe * 25) / 100;
-	resultInput.value = importe - descuento;
+	var total = importe - descuento;
+	resultInput.value = total.toFixed(2);
 }

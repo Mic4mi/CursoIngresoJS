@@ -1,5 +1,5 @@
 function mostrar() {
-	var destinoIngresado = txtIdDestino.value;
+	var destinoIngresado = document.getElementById("txtIdDestino").value;
 	switch (destinoIngresado) {
 		case "Bariloche":
 			alert("En esta locación, generalmente hace frío.");

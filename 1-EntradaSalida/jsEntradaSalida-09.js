@@ -7,5 +7,6 @@ function mostrarAumento() {
 	var inputResult = document.getElementById("txtIdResultado");
 	var sueldo = parseFloat(document.getElementById("txtIdSueldo").value);
 	var aumento = (sueldo * 10) / 100;
-	inputResult.value = sueldo + aumento;
+	var total = sueldo + aumento;
+	inputResult.value = total.toFixed(2);
 }
