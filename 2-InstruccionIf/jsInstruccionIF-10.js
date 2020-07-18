@@ -6,7 +6,7 @@ function mostrar() {
 	} else if (notaDelExamen > 4) {
 		alert("Tu nota es es " + notaDelExamen +". Aprobó");
 	} else {
-		alert("Tu nota es es " + notaDelExamen +". Vamos, la próxima se puede");
+		alert("Tu nota es es " + notaDelExamen +". Vamos, la próxima se puede!");
 	}
 
 }//FIN DE LA FUNCIÓN
