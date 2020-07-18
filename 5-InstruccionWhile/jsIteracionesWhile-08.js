@@ -5,21 +5,29 @@ function mostrar() {
 	let suma = document.getElementById("txtIdSuma");
 	let multiplicacion = document.getElementById("txtIdProducto");
 	let numeroIngresado;
-	let respuesta;
+	let respuesta = "si";
 	let contador = 0;
 	let sumaPositivos = 0;
 	let multiplicacionNegativos = 1;
 
 
 	while (respuesta != "no") {
-		numeroIngresado = parseFloat(prompt("Ingrese un numero"));
-		if (numeroIngresado < 0) {
-			multiplicacionNegativos *= numeroIngresado;
-		} else {
-			sumaPositivos += numeroIngresado;
+		while (respuesta == "si") {
+			numeroIngresado = parseFloat(prompt("Ingrese un numero"));
+			if (numeroIngresado < 0) {
+				multiplicacionNegativos *= numeroIngresado;
+			} else {
+				sumaPositivos += numeroIngresado;
+			}
+			respuesta = prompt("¿Quiere agregar otro número?").toLowerCase();
+
+			if (respuesta != "si" || respuesta != "no") {
+				alert("mal");
+				break;
+			}
 		}
+
 		contador++;
-		respuesta = prompt("¿Quiere agregar otro número?").toLowerCase();
 	}
 
 	suma.value = sumaPositivos;
