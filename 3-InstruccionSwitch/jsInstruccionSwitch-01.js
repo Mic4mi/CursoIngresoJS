@@ -1,7 +1,7 @@
 function mostrar() {
 	//tomo el mes
-	var mesDelAño = document.getElementById("txtIdMes").value;
-	switch (mesDelAño) {
+	let mes = document.getElementById("txtIdMes").value;
+	switch (mes) {
 		case "Enero":
 			alert("Que comiences bien el año!");
 			break;

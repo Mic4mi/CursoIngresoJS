@@ -1,5 +1,5 @@
 function mostrar() {
-	var destinoIngresado = document.getElementById("txtIdDestino").value;
+	let destinoIngresado = document.getElementById("txtIdDestino").value;
 	switch (destinoIngresado) {
 		case "Bariloche":
 			alert("Esta locación esta en el sur de Argentina.");
