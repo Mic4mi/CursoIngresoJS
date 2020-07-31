@@ -2,8 +2,6 @@ function mostrar() {
 	var numeroIngresado;
 	var contador = 0;
 	var acumulador = 0;
-	var sumaInput = document.getElementById("txtIdSuma");
-	var promedioInput = document.getElementById("txtIdPromedio");
 
 	while (contador < 5) {
 		numeroIngresado = parseFloat(prompt("Ingrese un numero"));
@@ -11,8 +9,8 @@ function mostrar() {
 		contador++;
 	}
 
-	sumaInput.value = acumulador;
-	promedioInput.value = acumulador / 5;
+	document.getElementById("txtIdSuma").value = acumulador;
+	document.getElementById("txtIdPromedio").value = acumulador / 5;
 }
 //FIN DE LA FUNCIÓN
 
