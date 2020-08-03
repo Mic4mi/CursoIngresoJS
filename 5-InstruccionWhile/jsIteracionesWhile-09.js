@@ -12,16 +12,12 @@ function mostrar() {
 	do {
 		numeroIngresado = parseFloat(prompt("Ingrese un numero"));
 
-		if (bandera == 0) {
+		if (bandera == 0 || numeroIngresado > maximo) {
 			maximo = numeroIngresado;
+		}
+		if (bandera == 0 || numeroIngresado < minimo) {
 			minimo = numeroIngresado;
 			bandera = 1;
-		}
-
-		if (numeroIngresado > maximo) {
-			maximo = numeroIngresado;
-		} else if (numeroIngresado < minimo) {
-			minimo = numeroIngresado;
 		}
 
 		contador++;
