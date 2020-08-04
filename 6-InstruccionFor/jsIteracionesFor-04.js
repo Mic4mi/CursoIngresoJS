@@ -1,5 +1,9 @@
-
 function mostrar() {
-// no entiendo el enunciado del ejercicio xD
+    for (let i = 1; i <= 10; i++) {
+        console.log(i)
+        if (i == 5) {
+            break;
+        }
+    }
 }
-//FIN DE LA FUNCIÓN
+

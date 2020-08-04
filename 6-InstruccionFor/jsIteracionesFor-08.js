@@ -1,5 +1,13 @@
 function mostrar() {
 	let numeroIngresado = parseInt(prompt("Ingrese un número"));
-	// números primos son aquellos que sólo pueden dividirse entre ellos mismos y 1; 
-
+	if (numeroIngresado < 2) {
+		console.log("no es primo");
+	}
+	for (let i = 2; i <= numeroIngresado; i++) {
+		if (numeroIngresado % i == 0) {
+			return console.log("no es primo");
+		}
+		return console.log("es primo");
+	}
 }
+

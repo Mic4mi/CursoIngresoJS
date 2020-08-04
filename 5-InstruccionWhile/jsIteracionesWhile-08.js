@@ -17,7 +17,6 @@ function mostrar() {
 		}
 
 		contador++;
-
 		continuar = prompt("¿Desea agregar otro número").toLowerCase();
 	} while (continuar == "si");
 
