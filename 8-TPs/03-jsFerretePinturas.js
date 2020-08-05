@@ -16,4 +16,4 @@ function CentigradosFahrenheit() {
     //  alert(`${temperaturaC} Centígrados son ${temperaturaF.toFixed(0)} Farenheit.`);
 }
 
-alert`${temperaturaC} jajajaja xD`
+alert`${temperaturaC}`

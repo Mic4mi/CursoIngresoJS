@@ -12,11 +12,10 @@ function CalcularPrecio() {
      const precio = 35;
      let marca = document.getElementById("Marca").value;
      let cantidadLamparas = parseInt(document.getElementById("txtIdCantidad").value);
-     let inputResultado = document.getElementById("txtIdprecioDescuento");
      let descuento = 0;
      let precioConDescuento = 0;
+     let precioFinal = 0;
      let IIBB = 0;
-     let importeFinal;
 
      switch (cantidadLamparas) {
           case 1:
@@ -48,20 +47,16 @@ function CalcularPrecio() {
                break;
           default:
                descuento = 50;
-
      }
 
-     precioConDescuento = precio - (precio * descuento) / 100
-     importeFinal = cantidadLamparas * precioConDescuento;
+     precioConDescuento = (precio - ((precio * descuento) / 100));
+     precioFinal = precioConDescuento * cantidadLamparas;
 
-     importeFinal = cantidadLamparas
-
-     if (importeFinal > 120) {
-          IIBB = (importeFinal * 10) / 100;
-          importeFinal += IIBB;
-          inputResultado.value = "$" + importeFinal + ". Usted pagó $" + IIBB + " de IIBB."
-     } else {
-          importeFinal = precio - (precio * 100) / descuento;
-          inputResultado.value = "$" + importeFinal
+     if (precioFinal >= 120) {
+          IIBB = precioFinal * 0.1;
+          precioFinal += IIBB;
+          alert("Usted debe pagar $" + IIBB + " de ingresos brutos.");
      }
+
+     document.getElementById("txtIdprecioDescuento").value = precioFinal;
 }
