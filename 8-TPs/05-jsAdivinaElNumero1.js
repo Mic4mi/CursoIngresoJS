@@ -10,29 +10,38 @@ de no ser igual se debe informar si “falta…”  para llegar al número secre
 let numeroSecreto;
 let contadorIntentos = 0;
 let mensaje = "";
+let bandera = false;
 
 function comenzar() {
   numeroSecreto = (Math.floor(Math.random() * 100) + 1);
   contadorIntentos = 0;
-  mensaje = "";
   document.getElementById("txtIdIntentos").value = "";
+  document.getElementById("txtIdNumero").value = "";
   console.log(numeroSecreto);
+  bandera = true;
 }
 
 function verificar() {
-  let numeroIngresado = document.getElementById("txtIdNumero").value;
-  if (isNaN(numeroIngresado)) {
-    contadorIntentos++
-    mensaje = "Eso no es un número. Intenta de nuevo. Intentos: " + contadorIntentos;
-  } else if (numeroIngresado < numeroSecreto) {
-    contadorIntentos++
-    mensaje = "Te falta aún. Intenta de nuevo. Intentos: " + contadorIntentos;
-  } else if (numeroIngresado > numeroSecreto) {
-    contadorIntentos++
-    mensaje = "Te pasaste. Intenta de nuevo. Intentos: " + contadorIntentos;
+  let numeroIngresado;
+  if (!bandera) {
+    alert("Presiona 'comenzar'");
   } else {
-    contadorIntentos++
-    mensaje = "¡Ganaste! y en sólo " + contadorIntentos + " intentos.";
+    numeroIngresado = document.getElementById("txtIdNumero").value;
+
+    if (isNaN(numeroIngresado)) {
+      contadorIntentos++
+      mensaje = "Eso no es un número. Intenta de nuevo. Intentos: " + contadorIntentos;
+    } else if (numeroIngresado < numeroSecreto) {
+      contadorIntentos++
+      mensaje = "Te falta aún. Intenta de nuevo. Intentos: " + contadorIntentos;
+    } else if (numeroIngresado > numeroSecreto) {
+      contadorIntentos++
+      mensaje = "Te pasaste. Intenta de nuevo. Intentos: " + contadorIntentos;
+    } else {
+      contadorIntentos++
+      bandera = false;
+      mensaje = "¡Ganaste! y en sólo " + contadorIntentos + " intentos.";
+    }
+    document.getElementById("txtIdIntentos").value = mensaje;
   }
-  document.getElementById("txtIdIntentos").value = mensaje;
 }
