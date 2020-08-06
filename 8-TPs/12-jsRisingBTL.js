@@ -26,7 +26,7 @@ function ComenzarIngreso() {
 	//VALIDAR SEXO
 	sexoIngresado = prompt("Sexo: Ingrese F para 'Femenino' ó M para 'Masculino'.").toLowerCase();
 	while (sexoIngresado != "f" && sexoIngresado != "m") {
-		sexoIngresado = prompt("Incorrecto. F para 'Femenino' ó M para 'Masculino'.");
+		sexoIngresado = prompt("Incorrecto. F para 'Femenino' ó M para 'Masculino'.").toLowerCase();
 	}
 	document.getElementById("txtIdSexo").value = "Sexo: " + queSexoEs(sexoIngresado);
 
@@ -54,7 +54,7 @@ function ComenzarIngreso() {
 	// VALIDACIÓN NACIONALIDAD
 	nacionalidad = prompt("Nacionaliad: Ingrese A para 'Argentino/a', E para 'Extranjero/a' ó N para 'Nacionalizado/a'").toLowerCase();
 	while (nacionalidad != "a" && nacionalidad != "e" && nacionalidad != "n") {
-		nacionalidad = prompt("Incorrecto. Ingrese A para 'Argentino/a', E para 'Extranjero/a' ó N para 'Nacionalizado/a'");
+		nacionalidad = prompt("Incorrecto. Ingrese A para 'Argentino/a', E para 'Extranjero/a' ó N para 'Nacionalizado/a'").toLowerCase();
 	}
 	document.getElementById("txtIdNacionalidad").value = "Nacionalidad: " + queNacionalidadEs(nacionalidad);
 
