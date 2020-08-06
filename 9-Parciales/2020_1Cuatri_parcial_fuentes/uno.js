@@ -29,7 +29,7 @@ function mostrar() {
 	let alcoholBaratoCantidad = 0;
 	let alcoholBaratoFabricante;
 
-	for (let i = 0; i < 4; i++) {
+	for (let i = 0; i < 5; i++) {
 
 		// Validar tipo.
 		tipo = prompt("Ingrese el tipo de producto: Alcohol, Barbijo, Jabon.").toLowerCase();
