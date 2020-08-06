@@ -60,16 +60,16 @@ function ComenzarIngreso() {
 
 }
 
-function queSexoEs(str) {
-	if (str == "f") {
-		return str = "Femenino";
-	} else if (str == "m") {
-		return str = "Masculino"
+function queSexoEs(sexo) {
+	if (sexo == "f") {
+		return sexo = "Femenino";
+	} else if (sexo == "m") {
+		return sexo = "Masculino"
 	}
 }
 
-function queEstadoCivilEs(n) {
-	switch (n) {
+function queEstadoCivilEs(estadoCivil) {
+	switch (estadoCivil) {
 		case 1:
 			return "Soltero/a"
 			break;
@@ -85,8 +85,8 @@ function queEstadoCivilEs(n) {
 	}
 }
 
-function queNacionalidadEs(str) {
-	switch (str) {
+function queNacionalidadEs(nacionalidad) {
+	switch (nacionalidad) {
 		case "a":
 			return "Argentino/a";
 			break;
