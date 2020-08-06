@@ -42,7 +42,7 @@ function ComenzarIngreso() {
 	// while (estadoCivilIngresado < 0 || estadoCivilIngresado > 4 || isNaN(estadoCivilIngresado)) {
 	// 	estadoCivilIngresado = parseInt(prompt("Error. Ingrese 1 para soltero, 2 para casado, 3 para divorciado o 4 para viudo."));
 	// }
-	// document.getElementById("txtIdSexo").value = "Estado civil: " + queEstadoCivilEs(estadoCivilIngresado);
+	// document.getElementById("txtIdEstadoCivil").value = "Estado civil: " + queEstadoCivilEs(estadoCivilIngresado);
 	// function queEstadoCivilEs(n) {
 	// 	switch (n) {
 	// 		case 1:
@@ -60,5 +60,21 @@ function ComenzarIngreso() {
 	// 	}
 	// }
 
+	// VALIDACIÓN SUELO BRUTO
+	// 	sueldoBruto = parseFloat(prompt("Ingrese su sueldo bruto"));
+	// 	while (sueldoBruto < 8000 || isNaN(sueldoBruto)) {
+	// 		sueldoBruto = parseFloat(prompt("Error. Ingrese un sueldo bruto válido mayor a $8000"));
+	// 	}
+	// 	document.getElementById("txtIdSueldo").value = "Sueldo bruto: $" + sueldoBruto;
+
+	// VALIDACIÓN NÚMERO DE LEGAJO
+	// numLegajo = parseInt(prompt("Ingrese un número de legajo"));
+	// while (numLegajo < 1000 || numLegajo > 9999 || isNaN(numLegajo)) {
+	// 	numLegajo = parseInt(prompt("Error. Ingrese un número de legajo válido, de 4 cifras cin ceros a la izquierda."));
+	// }
+	// document.getElementById("txtIdLegajo").value = "Número de legajo: " + numLegajo;
+
+
 }
+
 
