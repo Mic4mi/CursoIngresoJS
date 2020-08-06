@@ -40,9 +40,10 @@ function verificar() {
 			contadorIntentos++
 			mensaje = "Te pasaste. Intenta de nuevo. Intentos: " + contadorIntentos;
 		} else {
+			contadorIntentos++
 			switch (contadorIntentos) {
 				case 1:
-					alert("Usted es un psiquico");
+					alert("Usted es un psíquico");
 					break;
 				case 2:
 					alert("Excelente percepción!");
@@ -51,7 +52,7 @@ function verificar() {
 					alert("Esto es suerte");
 					break;
 				case 4:
-					alert("Excelente tecnica");
+					alert("Excelente técnica");
 					break;
 				case 5:
 					alert("Usted esta en la media");
@@ -61,7 +62,7 @@ function verificar() {
 				case 8:
 				case 9:
 				case 10:
-					alert("Falta tecnica");
+					alert("Falta técnica");
 					break;
 				default:
 					alert("Afortundo en el amor...");

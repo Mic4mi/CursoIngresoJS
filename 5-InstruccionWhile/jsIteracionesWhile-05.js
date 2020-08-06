@@ -2,7 +2,7 @@
 Al presionar el botón pedir un sexo
 'f' para femenino, 'm' para masculino.*/
 function mostrar() {
-	var sexoIngresado = prompt("ingrese f ó m.").toLowerCase();
+	let sexoIngresado = prompt("ingrese f ó m.").toLowerCase();
 
 	while (sexoIngresado != "f" && sexoIngresado != "m") {
 		sexoIngresado = prompt("Incorrecto. Ingrese f ó m .");
