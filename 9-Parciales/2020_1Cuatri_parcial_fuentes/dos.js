@@ -3,6 +3,7 @@ function mostrar() {
   let precioBolsa;
   let tipo;
   let continuar = "si";
+  let tipoConMayorCantidad;
   let cantidadTotalDeBolsas = 0;
   let arenaCantidad = 0;
   let calCantidad = 0;
@@ -11,7 +12,6 @@ function mostrar() {
   let precioConQuinceDeDescuento = 0;
   let precioConVeinticincoDeDescuento = 0;
   let mensaje;
-  let tipoConMayorCantidad;
   let arenaPrecio = 0;
   let calPrecio = 0;
   let cementoPrecio = 0;
@@ -61,7 +61,6 @@ function mostrar() {
   } while (continuar == "si");
 
   // DESCUENTO
-  console.log(cantidadTotalDeBolsas);
   if (cantidadTotalDeBolsas >= 10 && cantidadTotalDeBolsas < 30) {
     precioConQuinceDeDescuento = totalBruto - (totalBruto * 15) / 100;
     mensaje = "Por tu compra mayor a 10 bolsas obtuviste un descuento del 15%. Precio a pagar: " + precioConQuinceDeDescuento;
