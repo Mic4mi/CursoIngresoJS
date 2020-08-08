@@ -16,17 +16,17 @@ function mostrar() {
         }
         acumNotas += notas;
 
+        // Validar sexo
+        sexo = prompt('Ingrese el sexo: Ingrese "f" para fémenino o "m" para masculino.').toLowerCase();
+        while (sexo != "f" && sexo != "m") {
+            sexo = prompt('Incorrecto: Ingrese "f" para fémenino o "m" para masculino.').toLowerCase();
+        }
+
         //Nota + baja
         if (!(notaMasBajaBandera) || notas < notaMasBaja) {
             notaMasBaja = notas;
             notaMasBajaSexo = sexo;
             notaMasBajaBandera = true;
-        }
-
-        // Validar sexo
-        sexo = prompt('Ingrese el sexo: Ingrese "f" para fémenino o "m" para masculino.').toLowerCase();
-        while (sexo != "f" && sexo != "m") {
-            sexo = prompt('Incorrecto: Ingrese "f" para fémenino o "m" para masculino.').toLowerCase();
         }
 
         if (sexo === "m" && notas >= 6) {
