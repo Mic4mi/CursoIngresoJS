@@ -4,14 +4,14 @@ function mostrar() {
     let acumNotas = 0;
     let promedioNotas;
     let notaMasBajaBandera = false;
-    let notaMasBaja = 0;
+    let notaMasBaja;
     let notaMasBajaSexo;
     let varonesAprobados = 0;
 
     for (var i = 0; i < 5; i++) {
         // Validar notas
         notas = parseInt(prompt("Ingrese una nota"));
-        while (notas <= 0 || notas > 10 || isNaN(notas)) {
+        while (notas < 0 || notas > 10 || isNaN(notas)) {
             notas = parseInt(prompt("Incorrecto. Ingrese una nota válida"));
         }
         acumNotas += notas;
