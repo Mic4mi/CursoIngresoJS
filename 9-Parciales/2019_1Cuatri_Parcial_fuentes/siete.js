@@ -8,7 +8,7 @@ function mostrar() {
     let menorAlturaSexo;
     let mujeresAltas = 0;
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 5; i++) {
         //Validar altura
         altura = parseFloat(prompt("Ingrese la altura del jugador en cm."));
         while (altura <= 0 || altura > 250 || isNaN(altura)) {
@@ -38,7 +38,7 @@ function mostrar() {
     }
 
     // Imprimir promedio de alturas
-    promedioAlturas = acumAlturas / 3;
+    promedioAlturas = acumAlturas / 5;
     console.log("A. El promedio de todas las alturas es: " + promedioAlturas);
 
     // Imprimir altura más baja y sexo
