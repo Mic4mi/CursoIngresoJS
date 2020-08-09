@@ -43,7 +43,7 @@ function mostrar() {
     console.log("B. Nota más baja: " + notaMasBaja + ". Sexo de la persona: " + queSexoEs(notaMasBajaSexo));
 
     // Imprimir varones aprobados
-    console.log("C. El total de varones aprobados es de: " + varonesAprobados);
+    console.log("C. El total de varones aprobados con 6 o más es de: " + varonesAprobados);
 
 }
 
