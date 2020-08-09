@@ -62,7 +62,8 @@ function mostrar() {
             numeroMaximo = numero;
             numeroMaximoBandera = true;
             letraNumeroMaximo = letra;
-        } else if (!(numeroMinimoBandera) || numero < numeroMinimo) {
+        }
+        if (!(numeroMinimoBandera) || numero < numeroMinimo) {
             numeroMinimo = numero;
             numeroMinimoBandera = true;
             letraNumeroMinimo = letra;
