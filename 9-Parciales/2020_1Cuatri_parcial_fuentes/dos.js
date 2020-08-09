@@ -25,16 +25,13 @@ function mostrar() {
       tipo = prompt("Incorrecto. Ingrese el tipo de producto: Arena, Cal o Cemento.").toLowerCase();
     }
 
-    // Validar precio & cantidad
+    // Validar cantidad
     cantidad = parseInt(prompt("Ingrese la cantidad de bolsas."));
-    while (cantidad <= 0 || precioBolsa <= 0) {
-      if (cantidad <= 0) {
-        cantidad = parseInt(prompt("Incorrecto: La cantidad no puede ser cero o menor que cero. Ingrese la cantidad de bolsas."));
-      } else if (precioBolsa <= 0) {
-        precioBolsa = parseFloat(prompt("Incorrecto: El precio no puede ser menor o igual a cero. Ingrese el precio por unidad."));
-      }
+    while (cantidad <= 0 || isNaN(cantidad)) {
+      cantidad = parseInt(prompt("Incorrecto. Ingrese la cantidad de bolsas."));
     }
 
+    // Validar precio
     precioBolsa = parseFloat(prompt("Ingrese el precio por unidad."));
     while (precioBolsa <= 0 || isNaN(precioBolsa)) {
       precioBolsa = parseFloat(prompt("Incorrecto. Ingrese el precio por unidad."));
