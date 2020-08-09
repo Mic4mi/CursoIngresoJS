@@ -65,8 +65,8 @@ function mostrar() {
     //Imprimir
     console.log("A. La cantidad de numeros pares es de " + contadorPares);
     console.log("B. La cantidad de numeros impares es de " + contadorImpares);
-    console.log("B. La cantidad de ceros es de " + contadorCeros);
-    console.log("C. El promedio de números positivos es de " + promedio);
-    console.log("D. La suma de los números negativos es de " + acumNegativos);
-    console.log("C. El número máximo es " + numeroMaximo + " y le corresponde la letra " + numeroMaximoLetra + ", mientras que el número mínimo es " + numeroMinimo + " y le corresponde la letra " + numeroMinimoLetra + ".");
+    console.log("C. La cantidad de ceros es de " + contadorCeros);
+    console.log("D. El promedio de números positivos es de " + promedio);
+    console.log("E. La suma de los números negativos es de " + acumNegativos);
+    console.log("F. El número máximo es " + numeroMaximo + " y le corresponde la letra " + numeroMaximoLetra + ", mientras que el número mínimo es " + numeroMinimo + " y le corresponde la letra " + numeroMinimoLetra + ".");
 }
