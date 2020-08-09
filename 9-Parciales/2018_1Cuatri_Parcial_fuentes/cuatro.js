@@ -13,10 +13,10 @@ function mostrar() {
 
     //Si el primero es mayor los resto, si no, los sumo
     if (parseFloat(numeroUno) > parseFloat(numeroDos)) {
-        resta = (parseFloat(numeroUno) - parseFloat(numeroDos));
+        resta = parseFloat(numeroUno) - parseFloat(numeroDos);
         console.log("B. " + resta);
     } else {
-        suma = (parseFloat(numeroUno) + parseFloat(numeroDos));
+        suma = parseFloat(numeroUno) + parseFloat(numeroDos);
         console.log("B. " + suma);
     }
 
