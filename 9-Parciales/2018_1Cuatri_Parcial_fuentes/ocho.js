@@ -20,10 +20,10 @@ function mostrar() {
     let acumPositivos = 0;
     let acumNegativos = 0;
     let promedioPositivos;
-    let numeroMaximo;
+    let numeroMaximo = 0;
     let numeroMaximoBandera = false;
     let letraNumeroMaximo;
-    let numeroMinimo;
+    let numeroMinimo = 0;
     let numeroMinimoBandera = true;
     let letraNumeroMinimo;
 
@@ -57,15 +57,12 @@ function mostrar() {
             acumNegativos += numero
         }
 
-        // Numero y letra del maximo 
+        // Numero y letra del maximo y el mínimo
         if (!(numeroMaximoBandera) || numero > numeroMaximo) {
             numeroMaximo = numero;
             numeroMaximoBandera = true;
             letraNumeroMaximo = letra;
-        }
-
-        // Numero y letra del mínimo
-        if (!(numeroMinimoBandera) || numero < numeroMinimo) {
+        } else if (!(numeroMinimoBandera) || numero < numeroMinimo) {
             numeroMinimo = numero;
             numeroMinimoBandera = true;
             letraNumeroMinimo = letra;
