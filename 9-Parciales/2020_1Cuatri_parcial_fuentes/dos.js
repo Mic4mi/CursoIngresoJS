@@ -106,15 +106,23 @@ function mostrar() {
 
 
 // Validar cantidad
-    // cantidad = parseInt(prompt("Ingrese la cantidad de bolsas."));
-    // while (cantidad <= 0) {
-    //   cantidad = parseInt(prompt("Incorrecto: La cantidad no puede ser cero o menor que cero. Ingrese la cantidad de bolsas."));
-    // }
-    // console.log("Cantidad de bolsas: " + cantidad);
+// cantidad = parseInt(prompt("Ingrese la cantidad de bolsas."));
+// while (cantidad <= 0) {
+//   cantidad = parseInt(prompt("Incorrecto: La cantidad no puede ser cero o menor que cero. Ingrese la cantidad de bolsas."));
+// }
+// console.log("Cantidad de bolsas: " + cantidad);
 
-    // Validar precio
-    // precioBolsa = parseFloat(prompt("Ingrese el precio por unidad."));
-    // while (precioBolsa <= 0) {
-    //   precioBolsa = parseFloat(prompt("Incorrecto: El precio no puede ser menor o igual a cero. Ingrese el precio por unidad."));
-    // }
-    // console.log("Precio por bolsa: " + precioBolsa);
+// Validar precio
+// precioBolsa = parseFloat(prompt("Ingrese el precio por unidad."));
+// while (precioBolsa <= 0) {
+//   precioBolsa = parseFloat(prompt("Incorrecto: El precio no puede ser menor o igual a cero. Ingrese el precio por unidad."));
+// }
+// console.log("Precio por bolsa: " + precioBolsa);
+
+function queSexoEs(sexo) {
+  if (sexo === "f") {
+    return "femenino";
+  } else if (sexo === "m") {
+    return "masculino";
+  }
+}
